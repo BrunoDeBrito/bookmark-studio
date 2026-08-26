@@ -1,4 +1,4 @@
-import { FolderPlus, LayoutGrid, List, Moon, Plus, Search, Sun } from 'lucide-react'
+import { ArrowUpDown, FolderPlus, LayoutGrid, List, Moon, Plus, Search, Sun } from 'lucide-react'
 import clsx from 'clsx'
 
 export function Toolbar({
@@ -7,6 +7,8 @@ export function Toolbar({
   onSearchChange,
   viewMode,
   onViewModeChange,
+  folderOrder,
+  onToggleFolderOrder,
   theme,
   onToggleTheme,
   onNewBookmark,
@@ -17,6 +19,8 @@ export function Toolbar({
   onSearchChange: (q: string) => void
   viewMode: 'grid' | 'list'
   onViewModeChange: (m: 'grid' | 'list') => void
+  folderOrder: 'bookmarks-first' | 'folders-first'
+  onToggleFolderOrder: () => void
   theme: 'light' | 'dark'
   onToggleTheme: () => void
   onNewBookmark: () => void
@@ -50,6 +54,13 @@ export function Toolbar({
             <List size={15} />
           </ViewButton>
         </div>
+
+        <IconButton
+          onClick={onToggleFolderOrder}
+          label={folderOrder === 'bookmarks-first' ? 'Mostrar pastas primeiro' : 'Mostrar bookmarks primeiro'}
+        >
+          <ArrowUpDown size={15} />
+        </IconButton>
 
         <IconButton onClick={onToggleTheme} label={theme === 'dark' ? 'Modo claro' : 'Modo escuro'}>
           {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}

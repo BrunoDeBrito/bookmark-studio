@@ -21,6 +21,7 @@ import {
   useBookmarkStore,
   findNodeById,
   flattenFolders,
+  isDescendant,
   searchBookmarks,
 } from './store/useBookmarkStore'
 import type { BookmarkNode, FlatFolder } from './types'
@@ -41,12 +42,14 @@ export default function App() {
     selectedFolderId,
     searchQuery,
     viewMode,
+    folderOrder,
     expanded,
     load,
     selectFolder,
     toggleExpanded,
     setSearchQuery,
     setViewMode,
+    toggleFolderOrder,
     createBookmark,
     createFolder,
     updateBookmark,
@@ -79,6 +82,9 @@ export default function App() {
   const bookmarks: BookmarkNode[] = isSearching
     ? searchBookmarks(roots, searchQuery)
     : (selectedFolder?.children ?? []).filter((c: BookmarkNode) => !!c.url)
+  const subfolders: BookmarkNode[] = isSearching
+    ? []
+    : (selectedFolder?.children ?? []).filter((c: BookmarkNode) => !c.url)
 
   const totalBookmarks = useMemo(() => countAll(roots), [roots])
 
@@ -99,7 +105,8 @@ export default function App() {
     if (overId.startsWith('folder:')) {
       const targetFolderId = overId.slice('folder:'.length)
       const node = findNodeById(roots, activeId)
-      if (!node || node.parentId === targetFolderId) return
+      if (!node || node.parentId === targetFolderId || targetFolderId === activeId) return
+      if (!node.url && isDescendant(roots, activeId, targetFolderId)) return
       moveNode(activeId, targetFolderId)
       return
     }
@@ -147,6 +154,8 @@ export default function App() {
             onSearchChange={setSearchQuery}
             viewMode={viewMode}
             onViewModeChange={setViewMode}
+            folderOrder={folderOrder}
+            onToggleFolderOrder={toggleFolderOrder}
             theme={theme}
             onToggleTheme={toggleTheme}
             onNewBookmark={() => setModal({ type: 'new-bookmark' })}
@@ -155,9 +164,19 @@ export default function App() {
 
           <BookmarkGrid
             bookmarks={bookmarks}
+            folders={subfolders}
+            order={folderOrder}
             viewMode={viewMode}
             onEdit={(node) => setModal({ type: 'edit-bookmark', node })}
             onDelete={(node) => setModal({ type: 'delete', node })}
+            onOpenFolder={(node) => selectFolder(node.id)}
+            onEditFolder={(node) =>
+              setModal({
+                type: 'edit-folder',
+                folder: { id: node.id, title: node.title, parentId: node.parentId, depth: 0 },
+              })
+            }
+            onDeleteFolder={(node) => setModal({ type: 'delete', node })}
             emptyHint={
               isSearching
                 ? 'Tente outro termo de busca.'

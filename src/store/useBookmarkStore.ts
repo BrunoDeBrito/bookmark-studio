@@ -8,6 +8,7 @@ interface BookmarkState {
   selectedFolderId: string | null
   searchQuery: string
   viewMode: 'grid' | 'list'
+  folderOrder: 'bookmarks-first' | 'folders-first'
   expanded: Record<string, boolean>
 
   load: () => Promise<void>
@@ -16,6 +17,7 @@ interface BookmarkState {
   toggleExpanded: (id: string) => void
   setSearchQuery: (q: string) => void
   setViewMode: (mode: 'grid' | 'list') => void
+  toggleFolderOrder: () => void
 
   createBookmark: (parentId: string, title: string, url: string) => Promise<void>
   createFolder: (parentId: string, title: string) => Promise<void>
@@ -30,6 +32,7 @@ export const useBookmarkStore = create<BookmarkState>((set, get) => ({
   selectedFolderId: null,
   searchQuery: '',
   viewMode: 'grid',
+  folderOrder: 'bookmarks-first',
   expanded: {},
 
   load: async () => {
@@ -54,6 +57,8 @@ export const useBookmarkStore = create<BookmarkState>((set, get) => ({
     set((s) => ({ expanded: { ...s.expanded, [id]: !s.expanded[id] } })),
   setSearchQuery: (q) => set({ searchQuery: q }),
   setViewMode: (viewMode) => set({ viewMode }),
+  toggleFolderOrder: () =>
+    set((s) => ({ folderOrder: s.folderOrder === 'bookmarks-first' ? 'folders-first' : 'bookmarks-first' })),
 
   createBookmark: async (parentId, title, url) => {
     await bookmarksApi.create({ parentId, title, url })
