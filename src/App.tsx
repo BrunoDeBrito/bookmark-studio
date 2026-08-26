@@ -44,8 +44,10 @@ export default function App() {
     viewMode,
     folderOrder,
     expanded,
+    folderHistory,
     load,
     selectFolder,
+    goBack,
     toggleExpanded,
     setSearchQuery,
     setViewMode,
@@ -150,6 +152,8 @@ export default function App() {
         <div className="flex min-w-0 flex-1 flex-col overflow-y-auto">
           <Toolbar
             title={isSearching ? `Resultados para "${searchQuery}"` : selectedFolder?.title || 'Bookmarks'}
+            canGoBack={!isSearching && folderHistory.length > 0}
+            onBack={goBack}
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
             viewMode={viewMode}

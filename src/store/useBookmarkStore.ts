@@ -10,10 +10,12 @@ interface BookmarkState {
   viewMode: 'grid' | 'list'
   folderOrder: 'bookmarks-first' | 'folders-first'
   expanded: Record<string, boolean>
+  folderHistory: string[]
 
   load: () => Promise<void>
   refresh: () => Promise<void>
   selectFolder: (id: string) => void
+  goBack: () => void
   toggleExpanded: (id: string) => void
   setSearchQuery: (q: string) => void
   setViewMode: (mode: 'grid' | 'list') => void
@@ -34,6 +36,7 @@ export const useBookmarkStore = create<BookmarkState>((set, get) => ({
   viewMode: 'grid',
   folderOrder: 'bookmarks-first',
   expanded: {},
+  folderHistory: [],
 
   load: async () => {
     set({ loading: true })
@@ -52,7 +55,19 @@ export const useBookmarkStore = create<BookmarkState>((set, get) => ({
     set({ roots })
   },
 
-  selectFolder: (id) => set({ selectedFolderId: id, searchQuery: '' }),
+  selectFolder: (id) =>
+    set((s) => {
+      if (s.selectedFolderId && s.selectedFolderId !== id) {
+        return { selectedFolderId: id, searchQuery: '', folderHistory: [...s.folderHistory, s.selectedFolderId] }
+      }
+      return { selectedFolderId: id, searchQuery: '' }
+    }),
+  goBack: () =>
+    set((s) => {
+      if (s.folderHistory.length === 0) return {}
+      const previous = s.folderHistory[s.folderHistory.length - 1]
+      return { selectedFolderId: previous, searchQuery: '', folderHistory: s.folderHistory.slice(0, -1) }
+    }),
   toggleExpanded: (id) =>
     set((s) => ({ expanded: { ...s.expanded, [id]: !s.expanded[id] } })),
   setSearchQuery: (q) => set({ searchQuery: q }),

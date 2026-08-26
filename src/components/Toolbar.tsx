@@ -1,8 +1,10 @@
-import { ArrowUpDown, FolderPlus, LayoutGrid, List, Moon, Plus, Search, Sun } from 'lucide-react'
+import { ArrowLeft, ArrowUpDown, FolderPlus, LayoutGrid, List, Moon, Plus, Search, Sun } from 'lucide-react'
 import clsx from 'clsx'
 
 export function Toolbar({
   title,
+  canGoBack,
+  onBack,
   searchQuery,
   onSearchChange,
   viewMode,
@@ -15,6 +17,8 @@ export function Toolbar({
   onNewFolder,
 }: {
   title: string
+  canGoBack: boolean
+  onBack: () => void
   searchQuery: string
   onSearchChange: (q: string) => void
   viewMode: 'grid' | 'list'
@@ -28,7 +32,16 @@ export function Toolbar({
 }) {
   return (
     <div className="sticky top-0 z-10 flex flex-col gap-3 border-b border-slate-200/70 bg-slate-50/80 px-6 py-4 backdrop-blur-xl dark:border-white/5 dark:bg-[#0b0b14]/80 sm:flex-row sm:items-center sm:justify-between">
-      <div className="min-w-0">
+      <div className="flex min-w-0 items-center gap-2">
+        {canGoBack && (
+          <button
+            onClick={onBack}
+            title="Voltar"
+            className="flex shrink-0 items-center justify-center rounded-lg p-1.5 text-slate-400 transition hover:bg-slate-100 hover:text-slate-700 dark:hover:bg-white/10 dark:hover:text-slate-200"
+          >
+            <ArrowLeft size={17} />
+          </button>
+        )}
         <h1 className="truncate text-lg font-semibold text-slate-900 dark:text-slate-100">{title}</h1>
       </div>
 
