@@ -141,3 +141,15 @@ export function searchBookmarks(roots: BookmarkNode[], query: string): BookmarkN
   walk(roots)
   return out
 }
+
+export function recentBookmarks(roots: BookmarkNode[], limit: number): BookmarkNode[] {
+  const out: BookmarkNode[] = []
+  function walk(nodes: BookmarkNode[]) {
+    for (const node of nodes) {
+      if (node.url) out.push(node)
+      else if (node.children) walk(node.children)
+    }
+  }
+  walk(roots)
+  return out.sort((a, b) => (b.dateAdded ?? 0) - (a.dateAdded ?? 0)).slice(0, limit)
+}

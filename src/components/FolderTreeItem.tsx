@@ -38,7 +38,10 @@ export function FolderTreeItem({
             : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-white/5',
           isOver && 'ring-2 ring-indigo-400/70 bg-indigo-50 dark:bg-indigo-500/10',
         )}
-        onClick={() => onSelect(node.id)}
+        onClick={() => {
+          onSelect(node.id)
+          if (hasChildren && !isOpen) onToggle(node.id)
+        }}
       >
         <button
           onClick={(e) => {

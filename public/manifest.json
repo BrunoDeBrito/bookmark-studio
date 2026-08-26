@@ -16,10 +16,8 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "default_title": "Abrir Bookmark Studio"
-  },
-  "background": {
-    "service_worker": "background.js"
+    "default_title": "Abrir Bookmark Studio",
+    "default_popup": "popup.html"
   },
   "permissions": ["bookmarks", "favicon"],
   "web_accessible_resources": [
