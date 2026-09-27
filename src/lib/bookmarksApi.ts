@@ -1,7 +1,7 @@
 import type { BookmarkNode } from '../types'
+import { ext } from './ext'
 
-const hasChromeBookmarks =
-  typeof chrome !== 'undefined' && !!chrome.bookmarks && !!chrome.bookmarks.getTree
+const hasChromeBookmarks = !!ext?.bookmarks?.getTree
 
 const MOCK_KEY = 'bookmark-studio-mock-tree-v1'
 
@@ -108,12 +108,12 @@ export const bookmarksApi = {
   isLive: hasChromeBookmarks,
 
   async getTree(): Promise<BookmarkNode[]> {
-    if (hasChromeBookmarks) return chrome.bookmarks.getTree()
+    if (hasChromeBookmarks) return ext!.bookmarks.getTree()
     return loadMockTree()
   },
 
   async create(params: { parentId: string; title: string; url?: string; index?: number }): Promise<BookmarkNode> {
-    if (hasChromeBookmarks) return chrome.bookmarks.create(params)
+    if (hasChromeBookmarks) return ext!.bookmarks.create(params)
     const tree = loadMockTree()
     const parent = findNode(tree, params.parentId)
     if (!parent) throw new Error('Pasta não encontrada')
@@ -135,7 +135,7 @@ export const bookmarksApi = {
   },
 
   async update(id: string, changes: { title?: string; url?: string }): Promise<BookmarkNode> {
-    if (hasChromeBookmarks) return chrome.bookmarks.update(id, changes)
+    if (hasChromeBookmarks) return ext!.bookmarks.update(id, changes)
     const tree = loadMockTree()
     const node = findNode(tree, id)
     if (!node) throw new Error('Item não encontrado')
@@ -146,7 +146,7 @@ export const bookmarksApi = {
   },
 
   async move(id: string, destination: { parentId?: string; index?: number }): Promise<BookmarkNode> {
-    if (hasChromeBookmarks) return chrome.bookmarks.move(id, destination)
+    if (hasChromeBookmarks) return ext!.bookmarks.move(id, destination)
     const tree = loadMockTree()
     const node = findNode(tree, id)
     if (!node) throw new Error('Item não encontrado')
@@ -169,7 +169,7 @@ export const bookmarksApi = {
   },
 
   async remove(id: string): Promise<void> {
-    if (hasChromeBookmarks) return chrome.bookmarks.remove(id)
+    if (hasChromeBookmarks) return ext!.bookmarks.remove(id)
     const tree = loadMockTree()
     const arr = findParentArray(tree, id)
     if (arr) {
@@ -181,7 +181,7 @@ export const bookmarksApi = {
   },
 
   async removeTree(id: string): Promise<void> {
-    if (hasChromeBookmarks) return chrome.bookmarks.removeTree(id)
+    if (hasChromeBookmarks) return ext!.bookmarks.removeTree(id)
     return this.remove(id)
   },
 }

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:firefox": "tsc -b && vite build --mode firefox",
     "lint": "oxlint",
     "preview": "vite preview"
   },

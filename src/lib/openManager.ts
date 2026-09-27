@@ -1,18 +1,21 @@
-const isExtension = typeof chrome !== 'undefined' && !!chrome.runtime?.getURL
+import { ext, isExtension } from './ext'
 
 export async function openManager() {
   if (!isExtension) {
     window.open('/index.html', '_blank')
     return
   }
-  const url = chrome.runtime.getURL('index.html')
-  const [existing] = await chrome.tabs.query({ url })
+  const api = ext!
+  const url = api.runtime.getURL('index.html')
+  // Firefox rejects moz-extension:// URLs as a `url` query pattern, so filter manually.
+  const tabs = await api.tabs.query({})
+  const existing = tabs.find((t) => t.url === url)
   if (existing?.id) {
-    await chrome.tabs.update(existing.id, { active: true })
+    await api.tabs.update(existing.id, { active: true })
     if (existing.windowId != null) {
-      await chrome.windows.update(existing.windowId, { focused: true })
+      await api.windows.update(existing.windowId, { focused: true })
     }
     return
   }
-  await chrome.tabs.create({ url })
+  await api.tabs.create({ url })
 }
