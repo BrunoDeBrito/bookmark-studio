@@ -48,6 +48,8 @@ Gera a pasta `dist-firefox/` com um `manifest.json` adaptado (sem a permissão `
 
 A extensão temporária some ao fechar o Firefox. Para instalar de forma permanente, é preciso assiná-la no [addons.mozilla.org](https://addons.mozilla.org/developers/) (pode ser como "não listada"). Antes de publicar, troque o `id` em `vite.config.ts` por um seu. Para validar o pacote: `npx web-ext lint -s dist-firefox`.
 
+Guia completo (Zen Browser, CachyOS, Fedora Kinoite, assinatura do `.xpi`): [docs/firefox-zen.md](docs/firefox-zen.md).
+
 No Firefox os ícones dos sites vêm do serviço de favicons do Google, já que ele não oferece o `_favicon/` do Chrome.
 
 ## Publicar na Chrome Web Store
