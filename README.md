@@ -8,6 +8,45 @@ Stack: React 19 + TypeScript + Vite + Tailwind CSS v4 + dnd-kit + zustand. Manif
 
 Clicar no ícone da extensão abre um **popup** compacto (`popup.html`) com busca rápida e os bookmarks mais recentes. O botão no rodapé do popup ("Abrir gerenciador completo") abre a página cheia (`index.html`) em uma aba separada, com toda a árvore de pastas, drag-and-drop e edição.
 
+## Organizar uma pasta (✨)
+
+O botão ✨ na barra do gerenciador organiza a pasta aberta e pergunta como.
+
+> **A IA vem desligada por padrão.** O `npm run build` normal gera o pacote **sem nenhum código de IA**, pronto para publicar: o modal mostra só a ordem alfabética. Para gerar uma versão com IA (para uso próprio ou quando decidir liberar), use `npm run build:ai` / `npm run build:firefox:ai`, ou defina `VITE_ENABLE_AI=true` num arquivo `.env` (veja `.env.example`). Passo a passo completo da versão pessoal: [docs/versao-pessoal-com-ia.md](docs/versao-pessoal-com-ia.md).
+
+
+- **Só ordem alfabética** — mantém as pastas e ordena tudo: pastas primeiro, depois links, de A a Z (com opção de incluir subpastas). Não usa IA.
+- **Organização completa (IA)** — o Claude (`claude-opus-5-5`) monta uma árvore de pastas por tema, classifica cada link, remove duplicados (URLs iguais a menos de `ref`, `utm_*` etc.), apaga as pastas que ficarem vazias e ordena tudo. Mostra uma prévia com as pastas e contagens antes de aplicar, e baixa um backup JSON da pasta por padrão.
+
+A organização completa funciona com qualquer IA, escolhida no próprio modal:
+
+- **Anthropic (Claude)** — via SDK oficial.
+- **OpenAI, OpenRouter, Ollama (local) ou outro compatível com a API da OpenAI** (Groq, DeepSeek, LM Studio...) — informe a URL base, o modelo e a chave.
+
+As chamadas saem direto do navegador com a chave do usuário. Se você marcar "Lembrar a chave", ela fica salva no `localStorage` da extensão, só neste navegador. Para usar o Ollama, inicie-o com `OLLAMA_ORIGINS="chrome-extension://*,moz-extension://*"`.
+
+Onde fica cada parte:
+
+- `src/lib/organizerPrompt.ts` — regras e schemas da resposta (neutros, sem nada de provedor)
+- `src/lib/ai/provider.ts` — interface `AIProvider`, provedores pré-configurados e configurações salvas
+- `src/lib/ai/anthropic.ts`, `src/lib/ai/openaiCompatible.ts` — adaptadores (um arquivo por formato de API)
+- `src/lib/aiOrganizer.ts` — monta a árvore e classifica os links usando qualquer `AIProvider`
+- `src/lib/organize.ts` — duplicados, ordenação e aplicação do plano (sem IA)
+
+Para adicionar outra IA, crie um adaptador em `src/lib/ai/` que implemente `AIProvider` e registre-o em `PRESETS`.
+
+### Comparar provedores
+
+`evals/dataset.json` tem ~200 links com a pasta esperada. O script mede quantos cada provedor acerta (cada execução chama a API e gasta créditos):
+
+```bash
+EVAL_PRESET=anthropic EVAL_API_KEY=sk-ant-... npm run eval
+EVAL_PRESET=openrouter EVAL_API_KEY=... EVAL_MODEL=provedor/modelo npm run eval
+EVAL_PRESET=ollama EVAL_MODEL=nome-do-modelo npm run eval
+```
+
+Use `EVAL_LIMIT=50` para uma amostra menor. Os erros de cada execução ficam em `evals/results/` (fora do git).
+
 ## Rodar em desenvolvimento (sem instalar como extensão)
 
 ```bash

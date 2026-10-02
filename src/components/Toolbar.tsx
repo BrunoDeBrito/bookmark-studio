@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowUpDown, FolderPlus, LayoutGrid, List, Moon, Plus, Search, Sun } from 'lucide-react'
+import { ArrowLeft, ArrowUpDown, FolderPlus, LayoutGrid, List, Moon, Plus, Search, Sparkles, Sun } from 'lucide-react'
 import clsx from 'clsx'
 
 export function Toolbar({
@@ -15,6 +15,7 @@ export function Toolbar({
   onToggleTheme,
   onNewBookmark,
   onNewFolder,
+  onOrganize,
 }: {
   title: string
   canGoBack: boolean
@@ -29,6 +30,7 @@ export function Toolbar({
   onToggleTheme: () => void
   onNewBookmark: () => void
   onNewFolder: () => void
+  onOrganize?: () => void
 }) {
   return (
     <div className="sticky top-0 z-10 flex flex-col gap-3 border-b border-slate-200/70 bg-slate-50/80 px-6 py-4 backdrop-blur-xl dark:border-white/5 dark:bg-[#0b0b14]/80 sm:flex-row sm:items-center sm:justify-between">
@@ -78,6 +80,12 @@ export function Toolbar({
         <IconButton onClick={onToggleTheme} label={theme === 'dark' ? 'Modo claro' : 'Modo escuro'}>
           {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
         </IconButton>
+
+        {onOrganize && (
+          <IconButton onClick={onOrganize} label="Organizar esta pasta">
+            <Sparkles size={16} />
+          </IconButton>
+        )}
 
         <IconButton onClick={onNewFolder} label="Nova pasta">
           <FolderPlus size={16} />

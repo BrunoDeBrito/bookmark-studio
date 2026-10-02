@@ -1,0 +1,1232 @@
+[
+ {
+  "id": "1",
+  "title": "Overview",
+  "url": "https://docs.copilotkit.ai/",
+  "expected": "AI"
+ },
+ {
+  "id": "2",
+  "title": "Cerbos: Authorization for Enterprise Software and AI",
+  "url": "https://www.cerbos.dev/?_gl=1*zmivpu*_gcl_au*NDU2MDI5NTEuMTc4Njk3NjA5NA..*_ga*MTc0NDcxNDk3OC4xNzg2OTc2MDk0*_ga_8G3G3MS838*czE3ODY5NzYwOTIkbzEkZzEkdDE3ODY5NzYxMTAkajQyJGwwJGgw",
+  "expected": "AI"
+ },
+ {
+  "id": "3",
+  "title": "A2UI",
+  "url": "https://a2ui.org/",
+  "expected": "AI"
+ },
+ {
+  "id": "4",
+  "title": "Plandex - AI coding engine for complex tasks",
+  "url": "https://plandex.ai/?ref=dailydev",
+  "expected": "AI"
+ },
+ {
+  "id": "5",
+  "title": "REST test test...",
+  "url": "https://resttesttest.com/",
+  "expected": "Backend/APIs-Webhooks"
+ },
+ {
+  "id": "6",
+  "title": "Request Catcher — record HTTP requests, webhooks, API calls",
+  "url": "https://requestcatcher.com/",
+  "expected": "Backend/APIs-Webhooks"
+ },
+ {
+  "id": "7",
+  "title": "GitGuardian: Secrets Security and NHI Governance",
+  "url": "https://www.gitguardian.com/",
+  "expected": "Backend/Auth-Security"
+ },
+ {
+  "id": "8",
+  "title": "Cerbos: Open-Source Authorization Layer & Access Control System",
+  "url": "https://www.cerbos.dev/",
+  "expected": "Backend/Auth-Security"
+ },
+ {
+  "id": "9",
+  "title": "Cerbos Hub Pricing | Cerbos",
+  "url": "https://www.cerbos.dev/pricing",
+  "expected": "Backend/Auth-Security"
+ },
+ {
+  "id": "10",
+  "title": "Convex | The backend platform that keeps your app in sync",
+  "url": "https://www.convex.dev/",
+  "expected": "Backend/BaaS-CMS"
+ },
+ {
+  "id": "11",
+  "title": "thirdweb: The complete web3 development platform",
+  "url": "https://thirdweb.com/",
+  "expected": "Backend/BaaS-CMS"
+ },
+ {
+  "id": "12",
+  "title": "Builder.io: Ship twice as much, twice as fast",
+  "url": "https://www.builder.io/",
+  "expected": "Backend/BaaS-CMS"
+ },
+ {
+  "id": "13",
+  "title": "Build Blazing Fast Web Apps with Vite | Quick Guide",
+  "url": "https://www.builder.io/blog/vite",
+  "expected": "Backend/BaaS-CMS"
+ },
+ {
+  "id": "14",
+  "title": "Another Redis Desktop Manager | A faster, better and more stable redis desktop manager [GUI client], compatible with Linux, Windows, Mac. What's more, it won't crash when loading massive keys.",
+  "url": "https://goanother.com/#download",
+  "expected": "Backend/Database"
+ },
+ {
+  "id": "15",
+  "title": "Fast Open-Source OLAP DBMS - ClickHouse",
+  "url": "https://clickhouse.com/",
+  "expected": "Backend/Database"
+ },
+ {
+  "id": "16",
+  "title": "Meilisearch Blog",
+  "url": "https://blog.meilisearch.com/",
+  "expected": "Backend/Database"
+ },
+ {
+  "id": "17",
+  "title": "iuricode/desafios-frontend: Desafios frontend",
+  "url": "https://github.com/iuricode/desafios-frontend",
+  "expected": "Career-Learning/Challenges-Practice"
+ },
+ {
+  "id": "18",
+  "title": "About - Project Euler",
+  "url": "https://projecteuler.net/",
+  "expected": "Career-Learning/Challenges-Practice"
+ },
+ {
+  "id": "19",
+  "title": "SQLBolt - Learn SQL - Introduction to SQL",
+  "url": "https://sqlbolt.com/",
+  "expected": "Career-Learning/Challenges-Practice"
+ },
+ {
+  "id": "20",
+  "title": "CSSBattle",
+  "url": "https://cssbattle.dev/",
+  "expected": "Career-Learning/Challenges-Practice"
+ },
+ {
+  "id": "21",
+  "title": "QuizApi - Laravel Advanced Problem-Solving Quiz",
+  "url": "https://quizapi.io/predefined-quizzes/laravel-advanced-problem-solving-quiz",
+  "expected": "Career-Learning/Challenges-Practice"
+ },
+ {
+  "id": "22",
+  "title": "Joy for JavaScript Developers • Josh W. Comeau",
+  "url": "https://www.joyforjs.com/",
+  "expected": "Career-Learning/Courses"
+ },
+ {
+  "id": "23",
+  "title": "Coding Courses by Mosh Hamedani",
+  "url": "https://codewithmosh.com/courses",
+  "expected": "Career-Learning/Courses"
+ },
+ {
+  "id": "24",
+  "title": "Learn JavaScript, React, and TypeScript to Node.js, Fullstack, and Backend | Master.dev",
+  "url": "https://master.dev/",
+  "expected": "Career-Learning/Courses"
+ },
+ {
+  "id": "25",
+  "title": "Online Courses with Certificates - Grow with Google",
+  "url": "https://grow.google/certificates-udemy/",
+  "expected": "Career-Learning/Courses"
+ },
+ {
+  "id": "26",
+  "title": "Developer Roadmaps - roadmap.sh",
+  "url": "https://roadmap.sh/",
+  "expected": "Career-Learning/Courses"
+ },
+ {
+  "id": "27",
+  "title": "ui.dev",
+  "url": "https://ui.dev/c/typescript",
+  "expected": "Career-Learning/Courses"
+ },
+ {
+  "id": "28",
+  "title": "900+ Free Developer and IT Certifications — Class Central",
+  "url": "https://www.classcentral.com/report/free-developer-it-certifications/",
+  "expected": "Career-Learning/Courses"
+ },
+ {
+  "id": "29",
+  "title": "Treinamento – Cursos, Roteiros de Aprendizagem, Módulos | Microsoft Learn",
+  "url": "https://learn.microsoft.com/pt-br/training/",
+  "expected": "Career-Learning/Courses"
+ },
+ {
+  "id": "30",
+  "title": "Dia do Programador: como ser um programador freelance!",
+  "url": "https://www.workana.com/blog/pt/sin-categorizar/como-ser-um-programador-freelance/",
+  "expected": "Career-Learning/Freelance-Jobs"
+ },
+ {
+  "id": "31",
+  "title": "Online Employment Assessments & Testing Sotfware | HireVue",
+  "url": "https://www.hirevue.com/platform/assessment-software",
+  "expected": "Career-Learning/Freelance-Jobs"
+ },
+ {
+  "id": "32",
+  "title": "Laradir - Where the Laravel developers are",
+  "url": "https://laradir.com/",
+  "expected": "Career-Learning/Freelance-Jobs"
+ },
+ {
+  "id": "33",
+  "title": "David Heinemeier Hansson",
+  "url": "https://world.hey.com/dhh",
+  "expected": "Content/Blogs"
+ },
+ {
+  "id": "34",
+  "title": "Blog da Rocketseat",
+  "url": "https://blog.rocketseat.com.br/",
+  "expected": "Content/Blogs"
+ },
+ {
+  "id": "35",
+  "title": "Coding Tricks",
+  "url": "https://codingtricks.co/",
+  "expected": "Content/Blogs"
+ },
+ {
+  "id": "36",
+  "title": "Second Brain: Crafted, Curated, Connected, Compounded",
+  "url": "https://www.ssp.sh/brain/",
+  "expected": "Content/Blogs"
+ },
+ {
+  "id": "37",
+  "title": "Dotdev",
+  "url": "https://dotdev.co/",
+  "expected": "Content/Blogs"
+ },
+ {
+  "id": "38",
+  "title": "AkitaOnRails.com",
+  "url": "https://www.akitaonrails.com/",
+  "expected": "Content/Blogs"
+ },
+ {
+  "id": "39",
+  "title": "Advanced TypeScript - Angular Experts",
+  "url": "https://angularexperts.io/blog/advanced-typescript",
+  "expected": "Content/Blogs"
+ },
+ {
+  "id": "40",
+  "title": "Frontend Masters Boost – Helping Your Journey to Senior Developer",
+  "url": "https://frontendmasters.com/blog/",
+  "expected": "Content/Blogs"
+ },
+ {
+  "id": "41",
+  "title": "Codrops | Keeping web professionals inspired & up-to-date since 2009",
+  "url": "https://tympanus.net/codrops/",
+  "expected": "Content/News-Portals"
+ },
+ {
+  "id": "42",
+  "title": "Linha de Código - tudo sobre HTML, CSS, Javascript e muito mais!",
+  "url": "http://www.linhadecodigo.com.br/Default.aspx",
+  "expected": "Content/News-Portals"
+ },
+ {
+  "id": "43",
+  "title": "HackerNoon - read, write and learn about any technology",
+  "url": "https://hackernoon.com/",
+  "expected": "Content/News-Portals"
+ },
+ {
+  "id": "44",
+  "title": "Blog da Locaweb - Notícias sobre tecnologia, programação e muito mais.",
+  "url": "http://blog.locaweb.com.br/",
+  "expected": "Content/News-Portals"
+ },
+ {
+  "id": "45",
+  "title": "Web Tools #567 - Frameworks, Git/CLI, JSON, Databases",
+  "url": "https://mailchi.mp/webtoolsweekly/web-tools-567b?ref=dailydev",
+  "expected": "Content/Newsletters-Podcasts"
+ },
+ {
+  "id": "46",
+  "title": "Leadership in Tech",
+  "url": "https://newsletter.leadershipintech.com/",
+  "expected": "Content/Newsletters-Podcasts"
+ },
+ {
+  "id": "47",
+  "title": "Home | Daniel Miessler",
+  "url": "https://danielmiessler.com/",
+  "expected": "Content/Portfolios"
+ },
+ {
+  "id": "48",
+  "title": "beeps — front-end developer, furry, robot",
+  "url": "https://beeps.website/",
+  "expected": "Content/Portfolios"
+ },
+ {
+  "id": "49",
+  "title": "Making software, some thoughts",
+  "url": "https://kieranpotts.com/",
+  "expected": "Content/Portfolios"
+ },
+ {
+  "id": "50",
+  "title": "Flavio Copes",
+  "url": "https://flaviocopes.com/",
+  "expected": "Content/Portfolios"
+ },
+ {
+  "id": "51",
+  "title": "Till Carlos",
+  "url": "https://tillcarlos.com/",
+  "expected": "Content/Portfolios"
+ },
+ {
+  "id": "52",
+  "title": "mxkaske.dev",
+  "url": "https://www.mxkaske.dev/",
+  "expected": "Content/Portfolios"
+ },
+ {
+  "id": "53",
+  "title": "Muffin Man · Frontend & Creative Coding",
+  "url": "https://muffinman.io/",
+  "expected": "Content/Portfolios"
+ },
+ {
+  "id": "54",
+  "title": "Hi, I'm Rishi Mohan!",
+  "url": "https://rishimohan.me/",
+  "expected": "Content/Portfolios"
+ },
+ {
+  "id": "55",
+  "title": "Poline — Esoteric Color Palette Generation Library",
+  "url": "https://meodai.github.io/poline/",
+  "expected": "Design/Colors-Gradients"
+ },
+ {
+  "id": "56",
+  "title": "catppuccin/daisyui at dailydev",
+  "url": "https://github.com/catppuccin/daisyui?ref=dailydev",
+  "expected": "Design/Colors-Gradients"
+ },
+ {
+  "id": "57",
+  "title": "Fonttrio - Font Pairings for shadcn",
+  "url": "https://www.fonttrio.xyz/",
+  "expected": "Design/Fonts"
+ },
+ {
+  "id": "58",
+  "title": "Dev Fonts",
+  "url": "https://devfonts.gafi.dev/",
+  "expected": "Design/Fonts"
+ },
+ {
+  "id": "59",
+  "title": "The best Icon Tool • Orion Icon Library",
+  "url": "https://www.orioniconlibrary.com/",
+  "expected": "Design/Icons-Illustrations"
+ },
+ {
+  "id": "60",
+  "title": "Free SVG Icons - Laravel",
+  "url": "https://tablericons.com/",
+  "expected": "Design/Icons-Illustrations"
+ },
+ {
+  "id": "61",
+  "title": "Iconify Design: All popular icon sets, one framework.",
+  "url": "https://iconify.design/",
+  "expected": "Design/Icons-Illustrations"
+ },
+ {
+  "id": "62",
+  "title": "blobatar — deterministic geometric blobatars",
+  "url": "https://blobatar.dev/?via=dailydev",
+  "expected": "Design/Icons-Illustrations"
+ },
+ {
+  "id": "63",
+  "title": "UICONS – A beautiful icon set for the era of high-resolution UI",
+  "url": "https://www.uicons.com/",
+  "expected": "Design/Icons-Illustrations"
+ },
+ {
+  "id": "64",
+  "title": "Boxicons : Premium web friendly icons for free",
+  "url": "https://boxicons.com/",
+  "expected": "Design/Icons-Illustrations"
+ },
+ {
+  "id": "65",
+  "title": "My Room In 3D",
+  "url": "https://my-room.pages.dev/",
+  "expected": "Design/Inspiration-UX"
+ },
+ {
+  "id": "66",
+  "title": "Landing Pages Explained",
+  "url": "https://www.landingpagesexplained.com/",
+  "expected": "Design/Inspiration-UX"
+ },
+ {
+  "id": "67",
+  "title": "OddBird | Custom Web App Design & Development For Humans",
+  "url": "https://www.oddbird.net/",
+  "expected": "Design/Inspiration-UX"
+ },
+ {
+  "id": "68",
+  "title": "Toasts are Bad UX – Max Schmitt",
+  "url": "https://maxschmitt.me/posts/toasts-bad-ux",
+  "expected": "Design/Inspiration-UX"
+ },
+ {
+  "id": "69",
+  "title": "Homepage - Material Design",
+  "url": "https://material.io/",
+  "expected": "Design/Tools"
+ },
+ {
+  "id": "70",
+  "title": "CristianOlivera1/openvid: Create professional demos and 3D mockups in seconds, directly in your browser",
+  "url": "https://github.com/CristianOlivera1/openvid",
+  "expected": "Design/Tools"
+ },
+ {
+  "id": "71",
+  "title": "Zoomify Studio - Add Smooth Zooms to Your Videos",
+  "url": "https://zoomify.studio/",
+  "expected": "Design/Tools"
+ },
+ {
+  "id": "72",
+  "title": "getdesign.md — DESIGN.md Collection for AI Agents",
+  "url": "https://getdesign.md/",
+  "expected": "Design/Tools"
+ },
+ {
+  "id": "73",
+  "title": "Design.dev - Free CSS Tools, Generators & Web Development Resources",
+  "url": "https://design.dev/",
+  "expected": "Design/Tools"
+ },
+ {
+  "id": "74",
+  "title": "Explore | Layers",
+  "url": "https://layers.to/",
+  "expected": "Design/Tools"
+ },
+ {
+  "id": "75",
+  "title": "Are Design Patterns Missing Language Features",
+  "url": "https://wiki.c2.com/?AreDesignPatternsMissingLanguageFeatures",
+  "expected": "Dev-Tools/Docs-Reference"
+ },
+ {
+  "id": "76",
+  "title": "CheatSheets.zip - Ultimate Cheat for Developers",
+  "url": "https://cheatsheets.zip/index.html",
+  "expected": "Dev-Tools/Docs-Reference"
+ },
+ {
+  "id": "77",
+  "title": "Versionamento Semântico 2.0.0 | Semantic Versioning",
+  "url": "https://semver.org/lang/pt-BR/",
+  "expected": "Dev-Tools/Docs-Reference"
+ },
+ {
+  "id": "78",
+  "title": "Diátaxis",
+  "url": "https://diataxis.fr/",
+  "expected": "Dev-Tools/Docs-Reference"
+ },
+ {
+  "id": "79",
+  "title": "Refatoração e Padrões de Projeto",
+  "url": "https://refactoring.guru/pt-br",
+  "expected": "Dev-Tools/Docs-Reference"
+ },
+ {
+  "id": "80",
+  "title": "GitButler | Git Branching, Refined",
+  "url": "https://gitbutler.com/",
+  "expected": "Dev-Tools/Git"
+ },
+ {
+  "id": "81",
+  "title": "Free Git GUI Client - Windows, Mac & Linux | GitKraken",
+  "url": "https://www.gitkraken.com/",
+  "expected": "Dev-Tools/Git"
+ },
+ {
+  "id": "82",
+  "title": "seraui/seraui: Create Amazing Websites Quickly and Easily",
+  "url": "https://github.com/seraui/seraui",
+  "expected": "Dev-Tools/GitHub-Repos"
+ },
+ {
+  "id": "83",
+  "title": "taqui-786/itZmyLink: The Project is Live at",
+  "url": "https://github.com/taqui-786/itZmyLink",
+  "expected": "Dev-Tools/GitHub-Repos"
+ },
+ {
+  "id": "84",
+  "title": "permitio/opal: Policy and data administration, distribution, and real-time updates on top of Policy Agents (OPA, Cedar, ...)",
+  "url": "https://github.com/permitio/opal",
+  "expected": "Dev-Tools/GitHub-Repos"
+ },
+ {
+  "id": "85",
+  "title": "isaac545454 (isaac gomes)",
+  "url": "https://github.com/isaac545454",
+  "expected": "Dev-Tools/GitHub-Repos"
+ },
+ {
+  "id": "86",
+  "title": "StackBlitz | Instant Dev Environments | Click. Code. Done.",
+  "url": "https://stackblitz.com/",
+  "expected": "Dev-Tools/Playgrounds-Editors"
+ },
+ {
+  "id": "87",
+  "title": "marimo | a next-generation Python notebook",
+  "url": "https://marimo.io/",
+  "expected": "Dev-Tools/Playgrounds-Editors"
+ },
+ {
+  "id": "88",
+  "title": "Fast and reliable end-to-end testing for modern web apps | Playwright",
+  "url": "https://playwright.dev/",
+  "expected": "Dev-Tools/Testing-QA"
+ },
+ {
+  "id": "89",
+  "title": "Power Your Software Testing with AI and Cloud | LambdaTest",
+  "url": "https://www.lambdatest.com/",
+  "expected": "Dev-Tools/Testing-QA"
+ },
+ {
+  "id": "90",
+  "title": "Aviationstack: Real-Time Flight Tracker API - Free & Powerful",
+  "url": "https://aviationstack.com/",
+  "expected": "Dev-Tools/Utilities"
+ },
+ {
+  "id": "91",
+  "title": "IronCalc - Open-Source Spreadsheet Engine",
+  "url": "https://www.ironcalc.com/index.html#home",
+  "expected": "Dev-Tools/Utilities"
+ },
+ {
+  "id": "92",
+  "title": "opendataloader-project/opendataloader-pdf: PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+  "url": "https://github.com/opendataloader-project/opendataloader-pdf",
+  "expected": "Dev-Tools/Utilities"
+ },
+ {
+  "id": "93",
+  "title": "Free AI Writing, PDF, Image, and other Online Tools - TinyWow",
+  "url": "https://tinywow.com/",
+  "expected": "Dev-Tools/Utilities"
+ },
+ {
+  "id": "94",
+  "title": "Build optimized websites quickly, focus on your content | Docusaurus",
+  "url": "https://docusaurus.io/",
+  "expected": "Dev-Tools/Utilities"
+ },
+ {
+  "id": "95",
+  "title": "docsifyjs/docsify at dailydev",
+  "url": "https://github.com/docsifyjs/docsify?ref=dailydev",
+  "expected": "Dev-Tools/Utilities"
+ },
+ {
+  "id": "96",
+  "title": "Sms Dev | Sms Api, Gateway Sms para desenvolvedores – Sms Api, Gateway Sms para desenvolvedores",
+  "url": "https://www.smsdev.com.br/",
+  "expected": "Dev-Tools/Utilities"
+ },
+ {
+  "id": "97",
+  "title": "sxyazi/yazi at dailydev",
+  "url": "https://github.com/sxyazi/yazi?ref=dailydev#",
+  "expected": "DevOps-Infra/CLI-Terminal"
+ },
+ {
+  "id": "98",
+  "title": "Home | mise-en-place",
+  "url": "https://mise.jdx.dev/",
+  "expected": "DevOps-Infra/CLI-Terminal"
+ },
+ {
+  "id": "99",
+  "title": "Task: The Modern Task Runner | Task",
+  "url": "https://taskfile.dev/",
+  "expected": "DevOps-Infra/Deploy-Cloud"
+ },
+ {
+  "id": "100",
+  "title": "R44VC0RP/pgrok at dailydev",
+  "url": "https://github.com/R44VC0RP/pgrok?ref=dailydev",
+  "expected": "DevOps-Infra/Deploy-Cloud"
+ },
+ {
+  "id": "101",
+  "title": "ngrok: deliver your apps, APIs, and AI on local and prod",
+  "url": "https://ngrok.com/",
+  "expected": "DevOps-Infra/Deploy-Cloud"
+ },
+ {
+  "id": "102",
+  "title": "You move fast. Cloud development cycles do not.",
+  "url": "https://www.localstack.cloud/",
+  "expected": "DevOps-Infra/Deploy-Cloud"
+ },
+ {
+  "id": "103",
+  "title": "Podman",
+  "url": "https://podman.io/",
+  "expected": "DevOps-Infra/Deploy-Cloud"
+ },
+ {
+  "id": "104",
+  "title": "DigitalOcean – The developer cloud",
+  "url": "https://www.digitalocean.com/",
+  "expected": "DevOps-Infra/Deploy-Cloud"
+ },
+ {
+  "id": "105",
+  "title": "jesseduffield/lazydocker: The lazier way to manage everything docker",
+  "url": "https://github.com/jesseduffield/lazydocker",
+  "expected": "DevOps-Infra/Deploy-Cloud"
+ },
+ {
+  "id": "106",
+  "title": "DistroWatch.com:",
+  "url": "https://distrowatch.com/table.php?distribution=serpentOs",
+  "expected": "DevOps-Infra/Linux-Desktop"
+ },
+ {
+  "id": "107",
+  "title": "Getting Started - niri",
+  "url": "https://niri-wm.github.io/niri/Getting-Started.html",
+  "expected": "DevOps-Infra/Linux-Desktop"
+ },
+ {
+  "id": "108",
+  "title": "Quack Attack - Network Monitoring",
+  "url": "https://quackattack.io/?utm_source=opencollective&utm_medium=github&utm_campaign=laradock",
+  "expected": "DevOps-Infra/Monitoring-Analytics"
+ },
+ {
+  "id": "109",
+  "title": "odigos-io/odigos: Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetry and eBPF",
+  "url": "https://github.com/odigos-io/odigos",
+  "expected": "DevOps-Infra/Monitoring-Analytics"
+ },
+ {
+  "id": "110",
+  "title": "henrygd/beszel at dailydev",
+  "url": "https://github.com/henrygd/beszel?ref=dailydev",
+  "expected": "DevOps-Infra/Monitoring-Analytics"
+ },
+ {
+  "id": "111",
+  "title": "Open source Business Intelligence and Embedded Analytics",
+  "url": "https://www.metabase.com/",
+  "expected": "DevOps-Infra/Monitoring-Analytics"
+ },
+ {
+  "id": "112",
+  "title": "Rocket.Chat - Free, Open Source, Enterprise Team Chat",
+  "url": "https://rocket.chat/?gclid=CjwKCAjw1cX0BRBmEiwAy9tKHgrhMish0iIDAaKDN1wNzZxtqrKUvKWSOxCG5uo697xbf9TclP_xihoCEIYQAvD_BwE",
+  "expected": "DevOps-Infra/Self-Hosted"
+ },
+ {
+  "id": "113",
+  "title": "plankanban/planka: The realtime kanban board for workgroups built with React and Redux.",
+  "url": "https://github.com/plankanban/planka",
+  "expected": "DevOps-Infra/Self-Hosted"
+ },
+ {
+  "id": "114",
+  "title": "n1trux/awesome-sysadmin: A curated list of amazingly awesome open source sysadmin resources.",
+  "url": "https://github.com/n1trux/awesome-sysadmin",
+  "expected": "DevOps-Infra/Self-Hosted"
+ },
+ {
+  "id": "115",
+  "title": "Home - Planka",
+  "url": "https://planka.app/",
+  "expected": "DevOps-Infra/Self-Hosted"
+ },
+ {
+  "id": "116",
+  "title": "Ente - Private cloud storage for your photos, videos and more",
+  "url": "https://ente.io/",
+  "expected": "DevOps-Infra/Self-Hosted"
+ },
+ {
+  "id": "117",
+  "title": "Flexbox Labs",
+  "url": "https://flexboxlabs.netlify.app/grid",
+  "expected": "Frameworks/CSS"
+ },
+ {
+  "id": "118",
+  "title": "Flexbox Labs",
+  "url": "https://flexboxlabs.netlify.app/",
+  "expected": "Frameworks/CSS"
+ },
+ {
+  "id": "119",
+  "title": "Bootstrap em Português · O mais popular framework front-end responsivo e focado para dispositivos móveis do mundo.",
+  "url": "https://getbootstrap.com.br/",
+  "expected": "Frameworks/CSS"
+ },
+ {
+  "id": "120",
+  "title": "The most advanced responsive front-end framework in the world. | Foundation",
+  "url": "https://foundation.zurb.com/",
+  "expected": "Frameworks/CSS"
+ },
+ {
+  "id": "121",
+  "title": "Angular",
+  "url": "https://angular.io/",
+  "expected": "Frameworks/JS"
+ },
+ {
+  "id": "122",
+  "title": "Astro",
+  "url": "https://astro.build/",
+  "expected": "Frameworks/JS"
+ },
+ {
+  "id": "123",
+  "title": "Datastar",
+  "url": "https://data-star.dev/",
+  "expected": "Frameworks/JS/Libraries"
+ },
+ {
+  "id": "124",
+  "title": "revolist/revogrid at dailydev",
+  "url": "https://github.com/revolist/revogrid?ref=dailydev",
+  "expected": "Frameworks/JS/Libraries"
+ },
+ {
+  "id": "125",
+  "title": "Date Range Picker — JavaScript Date & Time Picker Library",
+  "url": "https://www.daterangepicker.com/",
+  "expected": "Frameworks/JS/Libraries"
+ },
+ {
+  "id": "126",
+  "title": "Sonner",
+  "url": "https://sonner.emilkowal.ski/",
+  "expected": "Frameworks/JS/Libraries"
+ },
+ {
+  "id": "127",
+  "title": "Markup by Before Semicolon",
+  "url": "https://markup.beforesemicolon.com/?ref=dailydev",
+  "expected": "Frameworks/JS/Libraries"
+ },
+ {
+  "id": "128",
+  "title": "Pushduck - Universal File Upload Library | Pushduck",
+  "url": "https://pushduck.dev/",
+  "expected": "Frameworks/JS/Libraries"
+ },
+ {
+  "id": "129",
+  "title": "Apache ECharts",
+  "url": "https://echarts.apache.org/en/index.html",
+  "expected": "Frameworks/JS/Libraries"
+ },
+ {
+  "id": "130",
+  "title": "Passport.js",
+  "url": "http://www.passportjs.org/",
+  "expected": "Frameworks/JS/Node-Backend"
+ },
+ {
+  "id": "131",
+  "title": "tj/n: Node version management",
+  "url": "https://github.com/tj/n",
+  "expected": "Frameworks/JS/Node-Backend"
+ },
+ {
+  "id": "132",
+  "title": "React-toastify | React-Toastify",
+  "url": "https://fkhadra.github.io/react-toastify/introduction",
+  "expected": "Frameworks/JS/React-Next"
+ },
+ {
+  "id": "133",
+  "title": "React Components",
+  "url": "https://reactcomponents.com/",
+  "expected": "Frameworks/JS/React-Next"
+ },
+ {
+  "id": "134",
+  "title": "React Hooks para Data Fetching – SWR",
+  "url": "https://swr.vercel.app/pt-BR",
+  "expected": "Frameworks/JS/React-Next"
+ },
+ {
+  "id": "135",
+  "title": "hookcn",
+  "url": "https://hookcn.ouassim.tech/",
+  "expected": "Frameworks/JS/React-Next"
+ },
+ {
+  "id": "136",
+  "title": "React Spectrum",
+  "url": "https://react-spectrum.adobe.com/",
+  "expected": "Frameworks/JS/React-Next"
+ },
+ {
+  "id": "137",
+  "title": "(20+) 9 Must-Try React UI Component Libraries for Stunning Web Apps in 2024 | daily.dev",
+  "url": "https://app.daily.dev/posts/9-must-try-react-ui-component-libraries-for-stunning-web-apps-in-2024-8wl1exi5s",
+  "expected": "Frameworks/JS/React-Next"
+ },
+ {
+  "id": "138",
+  "title": "ScrollX UI – Interactive React Components for Modern UIs",
+  "url": "https://scrollx-ui.vercel.app/",
+  "expected": "Frameworks/JS/React-Next"
+ },
+ {
+  "id": "139",
+  "title": "TanStack Router",
+  "url": "https://tanstack.com/router/latest",
+  "expected": "Frameworks/JS/React-Next"
+ },
+ {
+  "id": "140",
+  "title": "Biome, toolchain of the web",
+  "url": "https://biomejs.dev/",
+  "expected": "Frameworks/JS/Tooling"
+ },
+ {
+  "id": "141",
+  "title": "vitejs/awesome-vite at dailydev",
+  "url": "https://github.com/vitejs/awesome-vite?ref=dailydev",
+  "expected": "Frameworks/JS/Tooling"
+ },
+ {
+  "id": "142",
+  "title": "Home | Yarn - Package Manager",
+  "url": "https://yarnpkg.com/",
+  "expected": "Frameworks/JS/Tooling"
+ },
+ {
+  "id": "143",
+  "title": "Vueless UI: Styleless UI Library based on Tailwind for Vue",
+  "url": "https://vueless.com/?ref=dailydev",
+  "expected": "Frameworks/JS/Vue-Nuxt"
+ },
+ {
+  "id": "144",
+  "title": "Vue Toast Notifications Playground | Toastflow",
+  "url": "https://toastflow.adrianjanocko.sk/?ref=dailydev",
+  "expected": "Frameworks/JS/Vue-Nuxt"
+ },
+ {
+  "id": "145",
+  "title": "Nuxt: The Intuitive Vue Framework · Nuxt",
+  "url": "https://nuxt.com/",
+  "expected": "Frameworks/JS/Vue-Nuxt"
+ },
+ {
+  "id": "146",
+  "title": "How to Implement RBAC in a Community Dashboard with Nuxt",
+  "url": "https://www.freecodecamp.org/news/rbac-community-dashboard-with-nuxt/",
+  "expected": "Frameworks/JS/Vue-Nuxt"
+ },
+ {
+  "id": "147",
+  "title": "FlutterFlow - Build beautiful, modern apps incredibly fast",
+  "url": "https://flutterflow.io/",
+  "expected": "Frameworks/Mobile-Desktop"
+ },
+ {
+  "id": "148",
+  "title": "Kodeco | Learn iOS, Android & Flutter",
+  "url": "https://www.kodeco.com/",
+  "expected": "Frameworks/Mobile-Desktop"
+ },
+ {
+  "id": "149",
+  "title": "Code With Andrea: Dart, Flutter & Firebase tutorials and courses",
+  "url": "https://codewithandrea.com/",
+  "expected": "Frameworks/Mobile-Desktop"
+ },
+ {
+  "id": "150",
+  "title": "NativeBase: Universal Components for React & React Native",
+  "url": "https://nativebase.io/",
+  "expected": "Frameworks/Mobile-Desktop"
+ },
+ {
+  "id": "151",
+  "title": "3.8.5 Documentation",
+  "url": "https://docs.python.org/3/",
+  "expected": "Frameworks/Other-Languages"
+ },
+ {
+  "id": "152",
+  "title": "Rails UI Components | UI JetRockets",
+  "url": "https://ui.jetrockets.com/ui",
+  "expected": "Frameworks/Other-Languages"
+ },
+ {
+  "id": "153",
+  "title": "Tutorials — Create GUI applications with Python and Qt by Python GUIs (1)",
+  "url": "https://www.pythonguis.com/tutorials/",
+  "expected": "Frameworks/Other-Languages"
+ },
+ {
+  "id": "154",
+  "title": "Frappe",
+  "url": "https://github.com/frappe?ref=dailydev",
+  "expected": "Frameworks/Other-Languages"
+ },
+ {
+  "id": "155",
+  "title": "HydePHP - Elegant and Powerful Static Site Generator",
+  "url": "https://hydephp.com/docs/1.x/",
+  "expected": "Frameworks/PHP"
+ },
+ {
+  "id": "156",
+  "title": "High Performance PHP Framework - Phalcon Framework",
+  "url": "https://phalcon.io/en-us",
+  "expected": "Frameworks/PHP"
+ },
+ {
+  "id": "157",
+  "title": "Symfony, High Performance PHP Framework for Web Development",
+  "url": "https://symfony.com/",
+  "expected": "Frameworks/PHP"
+ },
+ {
+  "id": "158",
+  "title": "Page not found – dotdev",
+  "url": "https://dotdev.co/why-the-composer-lock-file-matters-c8d1e1488be7#.d549k78nn",
+  "expected": "Frameworks/PHP"
+ },
+ {
+  "id": "159",
+  "title": "How to monitor Guzzle Http Client – PHP Fast tips",
+  "url": "https://devdojo.com/inspector/how-to-monitor-guzzle-http-client-php-fast-tips?ref=dailydev",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "160",
+  "title": "Learn Laravel Path",
+  "url": "https://laracasts.com/path",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "161",
+  "title": "Installation | EAV",
+  "url": "https://sunel.github.io/eav/master/installation.html",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "162",
+  "title": "thedevdojo/tails: This is the Tails composer package for Laravel. Easily fetch designs in your Laravel application that you design inside of the Tails Site/Page Builder.",
+  "url": "https://github.com/thedevdojo/tails/",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "163",
+  "title": "Test-Driven Laravel – Learn to build robust, well-designed Laravel applications with TDD.",
+  "url": "https://course.testdrivenlaravel.com/?ref=dailydev",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "164",
+  "title": "10 Large Open-Source Projects Built with Laravel",
+  "url": "https://laraveldaily.com/post/large-laravel-open-source-projects?ref=dailydev",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "165",
+  "title": "tomatophp/filament-translations: Manage your translation with DB and cache",
+  "url": "https://github.com/tomatophp/filament-translations",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "166",
+  "title": "Laravel Showcase - Made with Laravel",
+  "url": "https://madewithlaravel.com/",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "167",
+  "title": "sprout-laravel/sprout: A flexible, seamless and easy to use multitenancy solution for Laravel",
+  "url": "https://github.com/sprout-laravel/sprout",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "168",
+  "title": "abbasudo/laravel-purity at dailydev",
+  "url": "https://github.com/abbasudo/laravel-purity?ref=dailydev",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "169",
+  "title": "epessine/axis: Draw charts with a simple API on Laravel",
+  "url": "https://github.com/epessine/axis",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "170",
+  "title": "Laravext Docs",
+  "url": "https://laravext.dev/#/",
+  "expected": "Frameworks/PHP/Laravel"
+ },
+ {
+  "id": "171",
+  "title": "zero-to-prod/data-model: Transform Data to Type-Safe DTOs",
+  "url": "https://github.com/zero-to-prod/data-model",
+  "expected": "Frameworks/PHP/Tools"
+ },
+ {
+  "id": "172",
+  "title": "XAMPP Installers and Downloads for Apache Friends",
+  "url": "https://www.apachefriends.org/index.html",
+  "expected": "Frameworks/PHP/Tools"
+ },
+ {
+  "id": "173",
+  "title": "Valet Linux | A fork of Laravel Valet to work in Linux.",
+  "url": "https://cpriego.github.io/valet-linux/requirements#fedora",
+  "expected": "Frameworks/PHP/Tools"
+ },
+ {
+  "id": "174",
+  "title": "Laragon - portable, isolated, fast & powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby.",
+  "url": "https://laragon.org/",
+  "expected": "Frameworks/PHP/Tools"
+ },
+ {
+  "id": "175",
+  "title": "Cursify",
+  "url": "https://cursify.vercel.app/",
+  "expected": "Frameworks/UI/Animation"
+ },
+ {
+  "id": "176",
+  "title": "AnimatiSS - A nice, colorful collection of CSS animations for your projects",
+  "url": "https://xsgames.co/animatiss/?ref=dailydev",
+  "expected": "Frameworks/UI/Animation"
+ },
+ {
+  "id": "177",
+  "title": "Transitions.dev — Essential transitions for web apps",
+  "url": "https://transitions.dev/?ref=dailydev",
+  "expected": "Frameworks/UI/Animation"
+ },
+ {
+  "id": "178",
+  "title": "Tailwind CSS Page Creator - Tails",
+  "url": "https://devdojo.com/tails",
+  "expected": "Frameworks/UI/Components"
+ },
+ {
+  "id": "179",
+  "title": "daisyUI themes — Tailwind CSS Components ( version 4 update is here )",
+  "url": "https://daisyui.com/docs/themes/",
+  "expected": "Frameworks/UI/Components"
+ },
+ {
+  "id": "180",
+  "title": "UIkit",
+  "url": "https://getuikit.com/",
+  "expected": "Frameworks/UI/Components"
+ },
+ {
+  "id": "181",
+  "title": "Semantic UI",
+  "url": "https://semantic-ui.com/",
+  "expected": "Frameworks/UI/Components"
+ },
+ {
+  "id": "182",
+  "title": "daisyUI — Tailwind CSS Components ( version 4 update is here )",
+  "url": "https://daisyui.com/",
+  "expected": "Frameworks/UI/Components"
+ },
+ {
+  "id": "183",
+  "title": "Tailus UI",
+  "url": "https://tailus.io/",
+  "expected": "Frameworks/UI/Components"
+ },
+ {
+  "id": "184",
+  "title": "Buttony",
+  "url": "https://buttonyui.com/",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "185",
+  "title": "taqui-786/Portfolio: A Simple Portfolio made with Nextjs and Shadcn UI",
+  "url": "https://github.com/taqui-786/Portfolio",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "186",
+  "title": "programming-with-ia/shadcn-theme-editor: Shadcn Theme Editor is a user-friendly component designed to simplify the process of managing and customizing theme colors in Shadcn-based projects.",
+  "url": "https://github.com/programming-with-ia/shadcn-theme-editor#readme",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "187",
+  "title": "Shadcn Studio - Shadcn UI Components, Blocks & Templates",
+  "url": "https://shadcnstudio.com/",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "188",
+  "title": "Cosmic UI",
+  "url": "https://www.cosmic-ui.com/",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "189",
+  "title": "Flash UI - Best Component Library for Rapid Development",
+  "url": "https://flashui.site/",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "190",
+  "title": "Shadcn Form Builder",
+  "url": "https://shadcn-form-build.vercel.app/",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "191",
+  "title": "shadscan: Audit shadcn apps for UI fundamentals",
+  "url": "https://www.shadscan.com/",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "192",
+  "title": "nolly-studio/cult-ui at dailydev",
+  "url": "https://github.com/nolly-studio/cult-ui?ref=dailydev",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "193",
+  "title": "EldoraUI",
+  "url": "https://www.eldoraui.site/",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "194",
+  "title": "Shadcn Marketing Blocks | Tailark",
+  "url": "https://tailark.com/",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "195",
+  "title": "Wigggle UI",
+  "url": "https://wigggle-ui.vercel.app/?ref=dailydev",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "196",
+  "title": "uipkge — registro de UI para React (Next.js) e Vue (Nuxt)",
+  "url": "https://uipkge.dev/vue/",
+  "expected": "Frameworks/UI/Shadcn"
+ },
+ {
+  "id": "197",
+  "title": "All UtilityCSS - 50+ TailwindCSS Templates, Components & Tools",
+  "url": "https://allutilitycss.com/",
+  "expected": "Frameworks/UI/Templates-Kits"
+ },
+ {
+  "id": "198",
+  "title": "Premium & Free Admin Template, HTML Themes- ThemeSelection",
+  "url": "https://themeselection.com/",
+  "expected": "Frameworks/UI/Templates-Kits"
+ },
+ {
+  "id": "199",
+  "title": "BoltStack | Launch your SaaS Faster Than Ever",
+  "url": "https://www.boltstack.dev/",
+  "expected": "Frameworks/UI/Templates-Kits"
+ },
+ {
+  "id": "200",
+  "title": "eCommerce Website Templates & UI Kit, Figma & Code",
+  "url": "https://ecommerce-ui.com/",
+  "expected": "Frameworks/UI/Templates-Kits"
+ },
+ {
+  "id": "201",
+  "title": "Pinkary - One Link. All Your Socials.",
+  "url": "https://pinkary.com/",
+  "expected": "SaaS-Apps"
+ },
+ {
+  "id": "202",
+  "title": "SolvSpot | Home",
+  "url": "https://www.solvspot.com/",
+  "expected": "SaaS-Apps/Business-Marketing"
+ },
+ {
+  "id": "203",
+  "title": "Zammad Helpdesk: Easy Setup, Smooth Workflows, Better Support",
+  "url": "https://zammad.com/en",
+  "expected": "SaaS-Apps/Business-Marketing"
+ },
+ {
+  "id": "204",
+  "title": "Crie seus mapas mentais online - Em qualquer dispositivo | MindMeister",
+  "url": "https://www.mindmeister.com/pt",
+  "expected": "SaaS-Apps/Productivity-Notes"
+ },
+ {
+  "id": "205",
+  "title": "Get Started",
+  "url": "https://www.notion.so/Get-Started-91399f60c55240359b8a0d8e69d95fc4",
+  "expected": "SaaS-Apps/Productivity-Notes"
+ }
+]

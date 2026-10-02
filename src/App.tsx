@@ -15,6 +15,7 @@ import { BookmarkGrid } from './components/BookmarkGrid'
 import { BookmarkFormModal } from './components/BookmarkFormModal'
 import { FolderFormModal } from './components/FolderFormModal'
 import { ConfirmDialog } from './components/ConfirmDialog'
+import { OrganizeModal } from './components/OrganizeModal'
 import { useTheme } from './lib/useTheme'
 import { faviconUrl } from './lib/favicon'
 import {
@@ -32,6 +33,7 @@ type ModalState =
   | { type: 'new-folder' }
   | { type: 'edit-folder'; folder: FlatFolder }
   | { type: 'delete'; node: BookmarkNode }
+  | { type: 'organize'; folder: BookmarkNode }
   | null
 
 export default function App() {
@@ -57,6 +59,7 @@ export default function App() {
     updateBookmark,
     moveNode,
     deleteNode,
+    refresh,
   } = useBookmarkStore()
 
   const [modal, setModal] = useState<ModalState>(null)
@@ -164,6 +167,9 @@ export default function App() {
             onToggleTheme={toggleTheme}
             onNewBookmark={() => setModal({ type: 'new-bookmark' })}
             onNewFolder={() => setModal({ type: 'new-folder' })}
+            onOrganize={
+              !isSearching && selectedFolder ? () => setModal({ type: 'organize', folder: selectedFolder }) : undefined
+            }
           />
 
           <BookmarkGrid
@@ -250,6 +256,10 @@ export default function App() {
             setModal(null)
           }}
         />
+      )}
+
+      {modal?.type === 'organize' && (
+        <OrganizeModal folder={modal.folder} onClose={() => setModal(null)} onFinished={refresh} />
       )}
 
       {modal?.type === 'delete' && (
