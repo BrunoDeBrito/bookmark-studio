@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "build:firefox": "tsc -b && vite build --mode firefox",
+    "lint:firefox": "web-ext lint -s dist-firefox",
+    "package:firefox": "npm run build:firefox && web-ext build -s dist-firefox -a web-ext-artifacts --overwrite-dest && S=$(git stash create) && git archive --format=zip -o web-ext-artifacts/bookmark-studio-source.zip ${S:-HEAD}",
     "lint": "oxlint",
     "preview": "vite preview",
     "eval": "vite-node evals/run-eval.ts",
@@ -36,6 +38,7 @@
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.2",
     "vite": "^8.2.2",
-    "vite-node": "^6.0.0"
+    "vite-node": "^6.0.0",
+    "web-ext": "^10.7.0"
   }
 }

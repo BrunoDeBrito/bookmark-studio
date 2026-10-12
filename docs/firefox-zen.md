@@ -94,10 +94,33 @@ Existe a opção `xpinstall.signatures.required = false` no `about:config`, mas 
 
 Não coloque as chaves de API no repositório.
 
+## Publicar na loja (addons.mozilla.org)
+
+Gere os dois arquivos que a AMO pede:
+
+```bash
+npm run package:firefox
+```
+
+O comando cria, em `web-ext-artifacts/`:
+
+- `bookmark_studio-<versão>.zip`: a extensão. É o arquivo enviado no upload.
+- `bookmark-studio-source.zip`: o código-fonte. A AMO pede porque o JavaScript do pacote é minificado. O zip é gerado com `git archive` e inclui as mudanças ainda não commitadas dos arquivos já versionados. Arquivos novos só entram depois de um `git add`.
+
+Para conferir o pacote antes do envio: `npm run lint:firefox`.
+
+### Avisos "Unsafe assignment to innerHTML"
+
+A validação da AMO mostra dois avisos desse tipo em `assets/vendor-react-*.js`. Eles vêm do React DOM, não do código da extensão: um é a criação interna de `<script>` com texto fixo e o outro é a implementação de `dangerouslySetInnerHTML`, que a extensão não usa. São avisos, não erros, e não impedem a publicação. O React fica num chunk próprio (`vendor-react`, configurado em `vite.config.ts`) justamente para deixar isso claro para quem revisa.
+
+Texto para o campo **Notes to Reviewer**:
+
+> The two "Unsafe assignment to innerHTML" warnings in `assets/vendor-react-*.js` come from the bundled React DOM library (react-dom 19), not from extension code. One is React's static `<script></script>` element creation; the other is the `dangerouslySetInnerHTML` implementation, which the extension never uses. To reproduce the build from the attached source: Node 22+, then `npm ci && npm run build:firefox`. The output is in `dist-firefox/`.
+
 ## Pendências e cuidados
 
 - [ ] Trocar o ID `bookmark-studio@debrito` em `vite.config.ts` antes da primeira assinatura. Depois de assinado, o ID não muda mais.
-- [ ] Adicionar `web-ext-artifacts/` ao `.gitignore`.
+- [x] Adicionar `web-ext-artifacts/` ao `.gitignore`.
 - [ ] Opcional: criar o script `npm run sign:firefox` para automatizar a assinatura.
 
 Atualizações de dependências adiadas de propósito, porque são saltos que podem quebrar o projeto:

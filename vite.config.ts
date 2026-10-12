@@ -17,8 +17,8 @@ function manifest(target: 'chrome' | 'firefox'): Plugin {
         delete m.minimum_chrome_version
         m.browser_specific_settings = {
           gecko: {
-            id: 'bookmark-studio@debrito',
-            strict_min_version: '140.0',
+            id: 'bookmark-studio-ext@BrunoDeBrito',
+            strict_min_version: '142.0',
             data_collection_permissions: { required: ['none'] },
           },
         }
@@ -44,6 +44,11 @@ export default defineConfig(({ mode }) => {
           entryFileNames: 'assets/[name]-[hash].js',
           chunkFileNames: 'assets/[name]-[hash].js',
           assetFileNames: 'assets/[name]-[hash][extname]',
+          // React DOM gets its own chunk so store linters (AMO's innerHTML warnings) point at the
+          // library rather than at app code.
+          codeSplitting: {
+            groups: [{ name: 'vendor-react', test: /node_modules[\\/](react|react-dom|scheduler)[\\/]/ }],
+          },
         },
       },
     },

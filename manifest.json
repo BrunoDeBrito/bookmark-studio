@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Bookmark Studio",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "Um gerenciador de bookmarks moderno: organize, edite e arraste seus favoritos com facilidade.",
   "icons": {
     "16": "icons/icon16.png",

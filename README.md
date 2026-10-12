@@ -85,7 +85,7 @@ Gera a pasta `dist-firefox/` com um `manifest.json` adaptado (sem a permissão `
 1. Abra `about:debugging#/runtime/this-firefox`
 2. Clique em **Carregar extensão temporária…** e selecione `dist-firefox/manifest.json`
 
-A extensão temporária some ao fechar o Firefox. Para instalar de forma permanente, é preciso assiná-la no [addons.mozilla.org](https://addons.mozilla.org/developers/) (pode ser como "não listada"). Antes de publicar, troque o `id` em `vite.config.ts` por um seu. Para validar o pacote: `npx web-ext lint -s dist-firefox`.
+A extensão temporária some ao fechar o Firefox. Para instalar de forma permanente, é preciso assiná-la no [addons.mozilla.org](https://addons.mozilla.org/developers/) (pode ser como "não listada"). Antes de publicar, troque o `id` em `vite.config.ts` por um seu. Para validar o pacote: `npm run lint:firefox`. Para gerar os zips da loja (extensão + código-fonte): `npm run package:firefox`.
 
 Guia completo (Zen Browser, CachyOS, Fedora Kinoite, assinatura do `.xpi`): [docs/firefox-zen.md](docs/firefox-zen.md).
 
